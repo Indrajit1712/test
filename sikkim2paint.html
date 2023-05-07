@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<style>
+    .container .row {
+        margin-top: 80px;
+        height: 700px;
+        width: 100%;
+    }
+
+    .compare-price {
+        text-decoration: line-through;
+    }
+    .container-fluid{
+        background-image: linear-gradient(to left, red, rgb(6, 163, 225));
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid bg-dark">
+            <img src="/images/Free_Sample_By_Wix.jpg" alt="" srcset="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light " aria-current="page" href="/bootstrap/sikkim2.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/bootstrap/sikkim2about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/bootstrap/sikkim2furnitures.html">Furnitures</a></li>
+                            <li><a class="dropdown-item" href="/bootstrap/sikkim2light.html">Lights</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <!-- <li><a class="dropdown-item" href="sikkim2paint.html">Paintings</a></li> -->
+                            <li><a class="dropdown-item" href="sikkim2paint.html">Shirts</a></li>
+                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light " aria-current="page" href="sikkim2contact.html">Contact Us</a>
+                        </li>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-dark bg-light" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class=" btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</button>
+                    <button class=" btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                        Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <!-- Button trigger modal -->
+        <!-- login modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade " id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog ">
+
+                <div class="modal-content ">
+
+                    <div class="modal-header ">
+                        <h1 class="modal-title fs-5 " id="exampleModalLabel">
+                            Log in</h1>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">First Name</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Last</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+    <!-- sign up -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupLabel">Sign up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"> confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleAge">Age</label>
+                            <input type="text" class="form-control" minlength="1" maxlength="2">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Create account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- starts here -->
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card h-100">
+                    <img src="/bootstrap/images/wallmart.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Teachings of Buddha Panoramic Wall Painting</h5>
+                        <p class="card-text">About The Product:
+
+                            High definition picture photo prints on canvas. True colors on thick superior quality gloss
+                            canvas to create the look and feel of an artist's masterpiece. Teaching of Buddha canvas
+                            print is stretched on wooden frame with hooks mounted.</p>
+                        <div class="prices">
+
+                            <span class="compare-price">₹ 2,099</span>
+                            <span class="price on-sale" itemprop="price">₹ 1,799</span>
+                            <span style="color: #145000; font-size: 80%;"> ( 14% Off )</span>
+
+                            <div style="font-size: 50%; color: #888;"> ( Inclusive of all taxes ) </div>
+
+
+
+                            <input type="hidden" id="product_regular_price" name="product_regular_price" value="179900">
+                        </div>
+                        <a href="#" class="btn btn-primary">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card h-100">
+                    <img src="/bootstrap/images/wall2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chromatic abstract ravishing woman painting</h5>
+                        <p class="card-text">It’s lightweight, Durable, Ready to hang out of the box.
+                            WARRANTY: 8 years of color warranty and a protective coating.</p>
+                        <div class="prices">
+
+                            <span class="compare-price">₹ 2,599</span>
+                            <span class="price on-sale" itemprop="price">₹ 1,399</span>
+                            <span style="color: #145000; font-size: 80%;"> ( 46% Off )</span>
+
+                            <div style="font-size: 50%; color: #888;"> ( Inclusive of all taxes ) </div>
+
+
+
+                            <input type="hidden" id="product_regular_price" name="product_regular_price" value="159900">
+                        </div>
+                        <a href="#" class="btn btn-primary mt-5">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card h-100">
+                    <img src="./images/wall3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sunset Natural Scenery Big Panoramic Canvas Wall Painting</h5>
+                        <p class="card-text">Natural Scenery wall hanging is high definition picture photo prints on
+                            canvas. True colors on thick gloss canvas to create the look and feel of an artist's
+                            masterpiece. </p>
+                        <div class="prices">
+
+                            <span class="compare-price">₹ 2,999</span>
+                            <span class="price on-sale" itemprop="price">₹ 1499</span>
+                            <span style="color: #145000; font-size: 80%;"> ( 50% Off )</span>
+
+                            <div style="font-size: 50%; color: #888;"> ( Inclusive of all taxes ) </div>
+
+
+
+                            <input type="hidden" id="product_regular_price" name="product_regular_price" value="159900">
+                        </div>
+                        <a href="#" class="btn btn-primary mt-4">Read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img src="./images/rest1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
